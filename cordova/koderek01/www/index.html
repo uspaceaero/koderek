@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+<!--         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+		<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+        <title>Koderek 01</title>
+    </head>
+    <body>
+	
+        <div class="app">		
+			
+            <h1>Koderek 01</h1>
+			<p>&nbsp;</p>
+            <div id="deviceready" class="blink">
+				<div data-role="header">
+					<!--<button class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-action"-->
+					<button class="ui-icon-action ui-button" id="buttonOn">RELAY ON</button>
+					<p>&nbsp;</p>
+					<button class="ui-icon-action ui-button" id="buttonOff">RELAY OFF</button>
+					<p>&nbsp;</p>
+				</div>
+			</div>
+			
+        </div>
+		
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+		
+    </body>
+</html>
